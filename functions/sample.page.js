@@ -21,7 +21,7 @@ class samplePage extends Page {
   get registerButton() {return browser.element('//*[@id="submitAccount"]');}
   get searchBar() {return browser.element('//*[@id="search_query_top"]');}
   get searchButton() {return browser.element('//*[@id="searchbox"]/button');}
-  get addToCartButton() {return browser.element('//*[@id="center_column"]/ul/li/div/div[2]/div[2]/a[1]');}
+  get addToCartButton() {return browser.element('//*[@id="center_column"]/ul/li[3]/div/div[2]/div[2]/a[1]');}
   
   goToHome () {
     browser.url('http://automationpractice.com');
@@ -33,7 +33,7 @@ class samplePage extends Page {
   }
 
   enterEmail() {
-    this.emailField.setValue('qwertswws@gmail.com');
+    this.emailField.setValue('siyasc1@gmail.com');
 
   }
 
@@ -65,7 +65,7 @@ class samplePage extends Page {
   }
 
   searchAndAddItem() {
-    this.searchBar.setValue('Shirt');
+    this.searchBar.setValue('printed dress');
     this.searchButton.click();
     browser.pause(2000);
     this.addToCartButton.click();

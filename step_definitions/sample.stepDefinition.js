@@ -3,7 +3,7 @@ import samplePage from '../functions/sample.page.js';
 
 defineSupportCode(function({ Given, When, Then }) {
 
-  Given(/^User goes to WebdriverIO Home page$/, () => {
+  Given(/^User goes to Home page$/, () => {
     samplePage.goToHome();
   });
 
